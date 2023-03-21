@@ -5,7 +5,7 @@
   "description": "A simple React single page app, built with Vite and React.",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "vite build && gh-pages -d dist -u 'https://github.com/nishpai94/react-todo-frontend.git' -b gh-pages",
+    "deploy": "vite build && gh-pages -d dist -b gh-pages -t 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",
     "start": "vite",
     "build": "vite build",
     "serve": "vite preview"
