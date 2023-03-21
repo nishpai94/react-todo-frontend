@@ -5,7 +5,8 @@
   "description": "A simple React single page app, built with Vite and React.",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    //"deploy": "gh-pages -d build",
+    "deploy": "vite build && gh-pages -d dist -u 'https://github.com/nishpai94/react-todo-frontend.git' -b gh-pages -t ${{ secrets.GITHUB_TOKEN }}",
     "start": "vite",
     "build": "vite build",
     "serve": "vite preview"
@@ -32,6 +33,7 @@
     "wouter": "^2.7.4"
   },
   "devDependencies": {
+    "@actions/core": "^1.10.0",
     "gh-pages": "^5.0.0",
     "vite": "^2.4.4"
   },
