@@ -18,7 +18,7 @@ jobs:
           NODE_ENV: production
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MY_EMAIL: nischi.pai@gmail.com
-          MY_NAME: "Nischita Pai"
+          MY_NAME: nischi94
         run: |
           git config --global user.email $MY_EMAIL
           git config --global user.name $MY_NAME
