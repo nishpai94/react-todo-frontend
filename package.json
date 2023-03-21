@@ -5,7 +5,7 @@
   "description": "A simple React single page app, built with Vite and React.",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "vite build && gh-pages -d dist -b gh-pages -t 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",
+    "deploy": "vite build && gh-pages -d build -b gh-pages -t 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",
     "start": "vite",
     "build": "vite build",
     "serve": "vite preview"
