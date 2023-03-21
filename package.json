@@ -5,7 +5,7 @@
   "description": "A simple React single page app, built with Vite and React.",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "main -d build",
+    "deploy": "gh-pages -d build",
     "start": "vite",
     "build": "vite build",
     "serve": "vite preview"
@@ -43,7 +43,7 @@
     "node": "12.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-react"
+    "url": "https://github.com/nishpai94/react-todo-frontend/"
   },
   "glitch": {
     "projectType": "generated_static"
