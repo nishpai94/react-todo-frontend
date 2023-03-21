@@ -18,12 +18,9 @@ concurrency:
 
 jobs:
   deploy:
-  env:
-    CI: true
-    NODE_ENV: production
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    MY_EMAIL: nischi.pai@gmail.com
-    MY_NAME: nishpai94
+    environment:
+      name: github-pages
+      url: "https://nishpai94.github.io/react-todo-frontend"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -42,7 +39,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload dist repository
           path: "./build"
       - name: Deploy to GitHub Pages
         id: deployment
