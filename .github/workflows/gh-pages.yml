@@ -13,8 +13,14 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
       - name: Build and deploy
-        run: npm run deploy
         env:
           CI: true
           NODE_ENV: production
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MY_EMAIL: nischi.pai@gmail.com
+          MY_NAME: "Nischita Pai"
+        run: |
+          git config --global user.email $MY_EMAIL
+          git config --global user.name $MY_NAME
+          git remote set-url origin https://$MY_NAME:$GITHUB_TOKEN@github.com/nischi94/react-todo-frontend.git
+          npm run deploy
