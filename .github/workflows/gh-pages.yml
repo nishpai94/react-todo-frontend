@@ -20,7 +20,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: "https://nishpai94.github.io/react-todo-frontend"
+      url: "https://nishpai94.github.io/"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
